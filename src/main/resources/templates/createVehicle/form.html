@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="grid-wrapper">
+	<form action="/garage" data-th-object="${vehicle}" method="post">
+		<div class="form-group">
+			<label class="mandatory">Vehicle type</label> 
+			<select name="role" id="id_role" class="form-control" multiple
+					data-placeholder="Please select role">
+					<option value=""></option>
+					<option value="bike">bike</option>
+					<option value="car">car</option>
+					<option value="lorry">lorry</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="inline mandatory" for="modelName">ModelName</label>
+			<input type="text" id="modelName" name="modelName" class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label class="inline mandatory" for="color">Color</label>
+			<input type="text" id="color" name="color" class="form-control"/>		
+		</div>
+		<div class="form-group">
+			<label class="inline mandatory" for="engineSize">engineSize</label>
+			<input type="text" id="engineSize" name="engineSize" class="form-control"/>		
+		</div>
+		<div class="form-group">
+			<label class="inline" for="numOfWheels">numOfWheels</label>
+			<input type="text" id="numOfWheels" name="numOfWheels" class="form-control"/>		
+		</div>
+		<div class="form-group">
+			<label class="inline" for="carryingCapacity">carryingCapacity</label>
+			<input type="text" id="carryingCapacity" name="carryingCapacity" class="form-control"/>		
+		</div>
+		<div class="form-group">
+			<label class="inline" for="numOfDoors">numOfDoors</label>
+			<input type="text" id="numOfDoors" name="numOfDoors" class="form-control"/>		
+		</div>
+		<div class="form-group">
+			<label class="inline" for="maxLeanAngle">maxLeanAngle</label>
+			<input type="text" id="maxLeanAngle" name="maxLeanAngle" class="form-control"/>		
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
