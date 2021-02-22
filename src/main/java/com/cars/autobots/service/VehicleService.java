@@ -1,13 +1,12 @@
-package com.cars.autobots.vehicle.service;
+package com.cars.autobots.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import com.cars.autobots.vehicle.command.Vehicle;
-import com.cars.autobots.vehicle.repo.VehicleRepository;
+import com.cars.autobots.command.Vehicle;
+import com.cars.autobots.repo.VehicleRepository;
 
 @Service
 public class VehicleService {

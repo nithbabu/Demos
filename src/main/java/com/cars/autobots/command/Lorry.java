@@ -1,4 +1,4 @@
-package com.cars.autobots.vehicle.command;
+package com.cars.autobots.command;
 
 import org.springframework.stereotype.Component;
 

@@ -1,10 +1,14 @@
-package com.cars.autobots.vehicle.command;
+package com.cars.autobots.command;
+
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Vehicle {
 
+    @Id
     private int numOfWheels;
     private int engineSize;
     private String color;

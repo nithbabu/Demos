@@ -1,11 +1,8 @@
-package com.cars.autobots.vehicle.repo;
+package com.cars.autobots.repo;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-
-import com.cars.autobots.vehicle.command.Vehicle;
+import com.cars.autobots.command.Vehicle;
 
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle, Integer> {
